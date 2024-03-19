@@ -32,13 +32,7 @@
                 <f:facet name="header">
                     <h:outputText value="Code de réduction"/>
                 </f:facet>
-                <h:outputText value="#{item.discount.code}"/>
-            </h:column>
-            <h:column>
-                <f:facet name="header">
-                    <h:outputText value="D. Rate"/>
-                </f:facet>
-                <h:outputText value="#{item.discount.rate}"/>
+                <h:outputText value="#{item.discount.code} : #{item.discount.rate} %" />
             </h:column>
         </h:dataTable>
     </h:body>

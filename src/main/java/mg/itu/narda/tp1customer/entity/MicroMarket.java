@@ -18,7 +18,7 @@ import jakarta.persistence.Table;
 
 /**
  *
- * @author 
+ * @author Narda <mg.itu.narda>
  */
 @Entity
 @Table(name = "MICRO_MARKET")

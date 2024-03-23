@@ -2,7 +2,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 package mg.itu.narda.tp1customer.entity;
 
 import java.io.Serializable;
@@ -16,9 +15,8 @@ import jakarta.persistence.NamedQuery;
 import jakarta.persistence.Table;
 
 /**
- * Un client.
  *
- * @author ****
+ * @author Narda <mg.itu.narda>
  */
 @Entity
 @Table(name = "CUSTOMER")
@@ -192,5 +190,5 @@ public class Customer implements Serializable {
     public String toString() {
         return "mg.itu.narda.tp1customer.entity.Customer[ customerId=" + customerId + " ]";
     }
-    
+
 }

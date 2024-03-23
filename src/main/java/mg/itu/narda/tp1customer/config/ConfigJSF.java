@@ -10,7 +10,7 @@ import jakarta.faces.annotation.FacesConfig;
 
 /**
  *
- * @author PC
+ * @author Narda <mg.itu.narda>
  */
 @ApplicationScoped
 @FacesConfig

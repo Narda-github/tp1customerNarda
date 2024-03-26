@@ -21,6 +21,10 @@ public class CustomerManager {
 
     private String[] states;
 
+    public Customer findById(int idCustomer) {
+        return em.find(Customer.class, idCustomer);
+    }
+
     @PostConstruct
     public void init() {
         states = new String[]{"FL", "GA", "TX", "CA", "NY", "MI"};

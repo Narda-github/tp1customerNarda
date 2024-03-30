@@ -8,8 +8,11 @@ import jakarta.inject.Named;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import java.io.Serializable;
+import java.util.List;
 import mg.itu.narda.tp1customer.entity.Customer;
+import mg.itu.narda.tp1customer.entity.Discount;
 import mg.itu.narda.tp1customer.service.CustomerManager;
+import mg.itu.narda.tp1customer.service.DiscountManager;
 
 /**
  *
@@ -24,6 +27,17 @@ public class CustomerDetailsBean implements Serializable {
 
     @Inject
     private CustomerManager customerManager;
+    @Inject
+    private DiscountManager discountManager;
+
+    /**
+     * Retourne la liste de tous les Discount.
+     *
+     * @return
+     */
+    public List<Discount> getDiscounts() {
+        return discountManager.getAllDiscounts();
+    }
 
     public int getIdCustomer() {
         return idCustomer;
